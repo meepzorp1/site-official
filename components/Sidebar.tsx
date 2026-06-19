@@ -2,6 +2,7 @@
 
 export default function Sidebar() {
     const links = [
+        { name: "Home", href: "/" },
         { name: "Santa Cruz", href: "/santacruz" },
         { name: "Ideas", href: "/ideas" },
         { name: "Support", href: "/support" },
@@ -9,14 +10,14 @@ export default function Sidebar() {
     ];
 
     return (
-        <aside className="bg-blue-100 p-16">
+        <aside className="bg-blue-100 p-4 sm:p-6 md:p-8 rounded-lg md:rounded-2xl">
             <nav>
-                <ul className="space-y-2">
+                <ul className="flex flex-wrap md:flex-col gap-2 md:gap-3">
                     {links.map((link) => (
                         <li key={link.href}>
                             <a
                                 href={link.href}
-                                className="inline-block text-white hover:text-gray-300 hover:underline hover:scale-105 transition-transform duration-150"
+                                className="inline-block text-sm sm:text-base text-slate-900 hover:text-blue-700 hover:underline hover:scale-105 transition-all duration-150"
                             >
                                 {link.name}
                             </a>

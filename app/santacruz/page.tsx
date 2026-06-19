@@ -2,7 +2,7 @@
 
 export default function SantaCruzPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-100 via-blue-2000 to-white px-6 py-12 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-blue-100 via-slate-50 to-white px-6 py-12 text-slate-900">
       <section className="mx-auto max-w-5xl rounded-[32px] border border-slate-200 bg-white/90 p-10 shadow-xl shadow-slate-200/40 backdrop-blur-sm">
         <div className="grid gap-10 lg:grid-cols-[1.3fr_0.8fr] lg:items-center">
           <div>

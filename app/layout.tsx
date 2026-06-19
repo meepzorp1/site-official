@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Google_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Topbar from "@/components/Topbar";
 import Sidebar from "@/components/Sidebar";
@@ -14,10 +14,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const googleSans = Google_Sans({
-  variable: "--google-sans",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
-})
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,13 +33,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${googleSans.variable} ${googleSans.variable} h-full antialiased bg-blue-100`}
+      className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased bg-blue-100`}
     >
-      <body className="min-h-screen h-screen flex flex-col bg-blue-100 p-8 rounded-2xl">
+      <body className="min-h-screen flex flex-col bg-blue-100 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-2xl">
         <Topbar />
-        <div className="flex flex-1 bg-blue-100">
-          <Sidebar />
-          {children}
+        <div className="flex flex-col md:flex-row flex-1 bg-blue-100 gap-4 md:gap-6">
+          <aside className="w-full md:w-64 md:block">
+            <Sidebar />
+          </aside>
+          <main className="flex-1 overflow-y-auto">
+            {children}
+          </main>
         </div>
       </body>
     </html>
