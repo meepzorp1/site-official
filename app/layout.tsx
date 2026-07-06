@@ -35,13 +35,13 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased bg-blue-100`}
     >
-      <body className="min-h-screen flex flex-col bg-blue-100 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-2xl">
+      <body className="min-h-screen h-screen flex flex-col bg-blue-100 sm:p-6 md:p-8 rounded-lg sm:rounded-2xl">
         <Topbar />
-        <div className="flex flex-col md:flex-row flex-1 bg-blue-100 gap-4 md:gap-6">
+        <div className="flex flex-col h-full md:flex-row flex-1 bg-blue-100 gap-4 md:gap-6">
           <aside className="w-full md:w-64 md:block">
             <Sidebar />
           </aside>
-          <main className="flex-1 overflow-y-auto">
+          <main className="flex-1 h-full overflow-y-auto">
             {children}
           </main>
         </div>

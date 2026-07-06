@@ -10,7 +10,7 @@ export default function Sidebar() {
     ];
 
     return (
-        <aside className="bg-blue-100 p-4 sm:p-6 md:p-8 rounded-lg md:rounded-2xl">
+        <aside className="bg-blue-100 p-4 hidden sm:p-6 md:p-8 rounded-lg md:rounded-2xl">
             <nav>
                 <ul className="flex flex-wrap md:flex-col gap-2 md:gap-3">
                     {links.map((link) => (

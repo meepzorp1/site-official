@@ -7,8 +7,8 @@ export default function home() {
   const [showForm, setShowForm] = useState(false);
 
   return (
-    <div className="mx-4 sm:mx-6 lg:mx-8">
-      <section className="rounded-[32px] border border-slate-200 bg-slate-950 px-6 py-16 text-white shadow-xl shadow-slate-900/20 sm:px-10 sm:py-20">
+    <div className="mx-4 h-full sm:mx-6 lg:mx-8">
+      <section className="h-full rounded-[32px] border border-slate-200 bg-slate-950 px-6 py-16 text-white shadow-xl shadow-slate-900/20 sm:px-10 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-3xl">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-sky-400">
