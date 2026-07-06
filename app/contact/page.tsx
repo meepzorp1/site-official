@@ -23,7 +23,7 @@ export default function ContactPage() {
                 },
                 body: JSON.stringify(data),
             });
-
+            
             if (response.ok) {
                 setSuccess("Message sent successfully!");
                 form.reset();

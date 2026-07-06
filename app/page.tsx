@@ -16,12 +16,12 @@ export default function home() {
             </p>
 
             <h1 className="my-8 max-w-2xl text-lg text-slate-300 sm:text-xl">
-              Turn your idea into a website, widget, app, or game.
+              Turn your idea into a....
             </h1>
             
-            <p className="align-items-right text-4xl font-bold leading-tight text-white sm:text-5xl py-4 text-right">
+            <p className="align-items-right text-4xl font-bold leading-tight text-white sm:text-5xl text-right">
 
-              <span>into a... Website,</span> <span className="block">
+              <span>Website,</span> <span className="block">
               Widget,</span> <span className="block">
               App,</span> <span>
               or Game.</span>

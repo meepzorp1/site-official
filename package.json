@@ -1,4 +1,11 @@
 {
+  "emmet.triggerExpansionOnTab": true,
+"emmet.showExpandedAbbreviation": "always",
+"emmet.useInlineCompletions": true,
+"emmet.includeLanguages": {
+    "javascriptreact": "html",
+    "typescriptreact": "html"
+},
   "name": "site-official",
   "version": "0.1.0",
   "private": true,
