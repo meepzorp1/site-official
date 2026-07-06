@@ -8,22 +8,31 @@ export default function home() {
 
   return (
     <div className="mx-4 h-full sm:mx-6 lg:mx-8">
-      <section className="h-full rounded-[32px] border border-slate-200 bg-slate-950 px-6 py-16 text-white shadow-xl shadow-slate-900/20 sm:px-10 sm:py-20">
+      <section className="h-full rounded-[32px] border border-slate-200 bg-slate-950 px-6 py-4 text-white shadow-xl shadow-slate-900/20 sm:px-10 sm:py-20">
         <div className="mx-auto max-w-6xl">
-          <div className="max-w-3xl">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-sky-400">
+          <div className="flex flex-col max-w-3xl">
+            <p className="self-right text-right text-sm font-semibold uppercase tracking-[0.28em] py-4 text-sky-400">
               Santa Cruz Web Development
             </p>
 
-            <h1 className="mb-6 text-4xl font-bold leading-tight text-white sm:text-5xl">
+            <h1 className="my-8 max-w-2xl text-lg text-slate-300 sm:text-xl">
               Turn your idea into a website, widget, app, or game.
             </h1>
+            
+            <p className="align-items-right text-4xl font-bold leading-tight text-white sm:text-5xl py-4 text-right">
 
-            <p className="mb-8 max-w-2xl text-lg text-slate-300 sm:text-xl">
+              <span>into a... Website,</span> <span className="block">
+              Widget,</span> <span className="block">
+              App,</span> <span>
+              or Game.</span>
+                          </p>
+
+
+            <p className="py-4 max-w-2xl text-lg text-slate-300 sm:text-xl">
               Based near Santa Cruz, I help businesses, creators, and entrepreneurs bring their ideas online. From simple websites to interactive tools, custom widgets, dashboards, and browser-based games.
             </p>
 
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+            <div className="my-4 flex flex-col gap-4 sm:flex-row sm:items-center">
               <button
                 type="button"
                 onClick={() => setShowForm((current) => !current)}
