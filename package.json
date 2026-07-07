@@ -1,11 +1,11 @@
 {
   "emmet.triggerExpansionOnTab": true,
-"emmet.showExpandedAbbreviation": "always",
-"emmet.useInlineCompletions": true,
-"emmet.includeLanguages": {
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.useInlineCompletions": true,
+  "emmet.includeLanguages": {
     "javascriptreact": "html",
     "typescriptreact": "html"
-},
+  },
   "name": "site-official",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +16,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@heroicons/react": "^2.2.0",
     "@visx/visx": "^4.0.0",
+    "gsap": "^3.15.0",
     "next": "16.2.9",
     "react": "19.2.4",
     "react-dom": "19.2.4",
