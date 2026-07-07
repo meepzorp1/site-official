@@ -191,12 +191,12 @@ export default function Home() {
                 {showForm ? "Hide form" : "Start a Project"}
               </button>
 
-              <button
+              {/* <button
                 type="button"
                 className={styles.secondaryButton.className}
               >
                 View Examples
-              </button>
+              </button> */}
              
             </div>
           </div>
